@@ -1,0 +1,178 @@
+
+
+.header { grid-area: header; }
+.add { grid-area: add; }
+.edit { grid-area: edit; border: solid 1px lightgray; display: none;}
+.view-Data{ grid-area: view;
+border: 1px solid lightgray;
+margin-top: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'add add add add add add'
+    'footer footer footer edit edit edit'
+     'view view view view view view';
+    
+  padding: 10px;
+}
+.title{
+font-size: 22px;
+text-transform: uppercase;
+color: black;
+font-weight: 700;
+margin-right: 5px;
+}
+
+.additem{
+border: solid 1px lightgray;
+grid-area: footer;
+display: none;
+}
+.inputbtn_div{
+display: none;
+}
+.inputbtn{
+margin-top: 10px;
+padding: 5px 10px;
+color: white;
+background-color: blue;
+margin-left: 5px;
+border: 1px solid lightgray;
+
+}
+.closebtn{
+padding: 5px 10px;
+border: solid 2px lightblue;
+color: blue;
+text-transform: uppercase;
+font-weight: 400px;
+margin-top: 5px;
+}
+.btn{
+background-color: #0c410c;
+margin-top: 10px;
+padding: 5px 10px;
+color: white;
+text-transform: uppercase;
+text-decoration: solid;
+font-weight: 500;
+border-radius: 5px;
+margin-bottom: 5px;
+}
+.addbtn{
+background-color: white;
+color: #0c410c;
+padding: 5px 10px;
+margin-top: 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+.submitbtn{
+background-color: #0c410c;
+margin-top: 10px;
+padding: 5px 10px;
+color: white;
+border-radius: 5px;
+margin-bottom: 5px;
+}
+.dyinput{
+margin-left: 10px;
+margin-top: 10px;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.form-section {
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.form-field input {
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+}
+
+.form-field input[readonly] {
+  background-color: #f3f3f3;
+  cursor: not-allowed;
+  color: #999;
+}
+
+.form-field input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+.editbtn{
+background-color: #0c410c;
+margin-top: 10px;
+padding: 5px 10px;
+color: white;
+text-transform: uppercase;
+text-decoration: solid;
+font-weight: 500;
+border-radius: 5px;
+margin-left: 5px;
+cursor: pointer;
+margin-bottom: 5px;
+}
+.editText{
+margin-bottom: 10px;
+}
+.edittextDiv{
+border: 2px solid gray;
+padding: 5px;
+border-radius: 5px;
+
+}
+.lable{
+margin-right: 10px;
+}
+.updateInput{
+display: none;
+}
+.placeholder{
+margin-left: 5px;
+margin-right: 5px;
+}
+.formLable{
+/* margin-left: 37%; */
+}
