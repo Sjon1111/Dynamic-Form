@@ -149,23 +149,25 @@ export default function Form() {
   };
   const handleFormChange = (newValue, fieldIndex) => {
 
-    const updatedFormData = [...formData];
+    const updatedSaveValue = [...saveValue];
 
 
-    updatedFormData[selectedFormIndex].fields[fieldIndex].value = newValue;
+    updatedSaveValue[selectedFormIndex].fields[fieldIndex] = {
+      ...updatedSaveValue[selectedFormIndex].fields[fieldIndex],
+      value: newValue,
+    };
 
 
-    setsaveValue(updatedFormData);
+    setsaveValue(updatedSaveValue);
   };
 
   const handleFormupdate = (newValue, fieldIndex, fieldKey) => {
-    // Copy the saveValue state
+
     const updatedSaveValue = [...saveValue];
 
-    // Update the specific field's placeholder or value based on fieldKey ('placeholder' or 'value')
+
     updatedSaveValue[selectedFormIndex].fields[fieldIndex][fieldKey] = newValue;
 
-    // Update saveValue with the modified array
     setsaveValue(updatedSaveValue);
     console.log(saveValue)
   };
@@ -194,7 +196,9 @@ export default function Form() {
     console.log(saveValue[index])
   };
   const submitForm = (index) => {
-    console.log("Submitted Data:", saveValue[index]);
+
+    alert('Data Submited , check console')
+    console.log("Submitted Data:", saveValue[index].fields);
 
   };
   const editForm = (index) => {
