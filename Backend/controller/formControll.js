@@ -81,7 +81,7 @@ export const deleteForm = async (req, res) => {
     res.status(200).json({ message: 'Form deleted done', deletedForm });
   } catch (error) {
 
-    res.status(500).json({ message: 'error in form deleting' });
+    res.status(500).json({ message: 'error in form while deleting' });
   }
 };
 
